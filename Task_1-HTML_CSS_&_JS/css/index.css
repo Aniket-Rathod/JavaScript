@@ -1,0 +1,24 @@
+#btn1{
+  color: rgb(216, 229, 117);
+}
+
+.btn2{
+  color: rgb(78, 135, 186);
+
+}
+
+#bag{
+  padding: 5px 15px 5px 15px;
+  margin: 5px;
+  background-color: greenyellow;
+  border-style: dashed;
+  border-radius: 10px;
+}
+
+#wish{
+  padding: 5px 15px 5px 15px;
+  margin: 5px;
+  background-color: rgb(255, 196, 47);
+  border-style:ridge;
+  border-radius: 10px;
+}

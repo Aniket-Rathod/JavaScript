@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Variable-Task</title>
+</head>
+
+<body>
+
+  <h1 id="my-name"></h1>
+
+  <h1 id="price"></h1>
+
+
+
+  <script>
+    const myName = 'Aniket Motiram Rathod';
+    console.log(myName);
+    document.querySelector('#my-name').innerText = myName;
+
+
+    const GSTpercentage = 18;
+    let cartValue = Math.round( ( (15599-(10/100 * 15599)) - 272 + (2499-( 41/100 * 2499 )) - 29 + 25 + 20) * (100 + GSTpercentage) / 100);
+    console.log(cartValue);
+    document.querySelector('#price').innerText = cartValue;
+
+    console.log(eval('40+60'));
+  </script>
+  
+</body>
+</html>

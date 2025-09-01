@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task1 - Amazon-Bag</title>
+  <style>
+    #bag
+    {
+      padding: 5px 15px 5px 15px;
+      margin: 5px;
+      background-color: greenyellow;
+      border-style: dashed;
+      border-radius: 10px;
+    }
+
+    #wish
+    {
+      padding: 5px 15px 5px 15px;
+      margin: 5px;
+      background-color: rgb(255, 196, 47);
+      border-style:ridge;
+      border-radius: 10px;
+      text-transform: uppercase;
+    }
+
+    #add
+    {
+      padding: 5px 15px 5px 15px;
+      margin: 5px;
+      background-color: rgb(47, 255, 161);
+      border-style:groove;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button id="bag" onclick="CartQuant++; document.querySelector('#cart-summary').innerText = `Your Cart has ${CartQuant} Items`;">🛒 Add to Cart</button>
+
+  <button id="wish" onclick="CartQuant--; document.querySelector('#cart-summary').innerText = `Your Cart has ${CartQuant} Items`;">❤️ Move to Wishlist</button>
+
+  <button id="add" onclick="CartQuant += 2; document.querySelector('#cart-summary').innerText = `Your Cart has ${CartQuant} Items`;">Add 1 + 1 Sale Item</button>
+
+  <h1 id="cart-summary"></h1>
+
+
+  <script>
+    let CartQuant = 0;
+    document.querySelector('#cart-summary').innerText = `Your Cart has ${CartQuant} Items`;
+  </script>
+  
+</body>
+</html>
