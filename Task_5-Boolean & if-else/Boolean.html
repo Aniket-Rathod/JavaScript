@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean</title>
+  </head>
+  <body>
+    <script>
+      console.log(5 < 8);
+      console.log(typeof (5 < 8));
+      console.log(typeof "5<8");
+      console.log(typeof true);
+
+      console.log(5 == 5);
+      console.log(5 == 4);
+
+      console.log(11 == "11"); //It will convert types from number to string or string to number
+      console.log(11 == '11.0');
+
+      console.log(32 === "32"); //it will check the number and type also if matches true otherwise false
+      console.log(42 === '42.0');
+
+      console.log(25!=25);
+      console.log(25!=5);
+
+      console.log(66!=='66'); // in this case thier types are not equal so it will give true
+      console.log('66'!=='66');
+
+      console.log(5+11 === 6+10); // in this it will first consider arithmatic operation then relation
+    </script>
+  </body>
+</html>
